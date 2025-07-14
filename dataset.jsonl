@@ -1,0 +1,71 @@
+{"prompt": "Transfer 1000 USDT to Alice", "target": "{\"name\": \"transfer_token\", \"arguments\": {\"token\": \"USDT\", \"recipient\": \"Alice\", \"amount\": 1000}}"}
+{"prompt": "Send 50 BNB to 0x1234abcd", "target": "{\"name\": \"transfer_token\", \"arguments\": {\"token\": \"BNB\", \"recipient\": \"0x1234abcd\", \"amount\": 50}}"}
+{"prompt": "Please transfer 3000 DAI to Bob", "target": "{\"name\": \"transfer_token\", \"arguments\": {\"token\": \"DAI\", \"recipient\": \"Bob\", \"amount\": 3000}}"}
+{"prompt": "Give 100 MATIC to wallet 0xDEAD", "target": "{\"name\": \"transfer_token\", \"arguments\": {\"token\": \"MATIC\", \"recipient\": \"0xDEAD\", \"amount\": 100}}"}
+{"prompt": "Move 5000 USDC to user Tom", "target": "{\"name\": \"transfer_token\", \"arguments\": {\"token\": \"USDC\", \"recipient\": \"Tom\", \"amount\": 5000}}"}
+{"prompt": "Send 1.5 ETH to David", "target": "{\"name\": \"transfer_token\", \"arguments\": {\"token\": \"ETH\", \"recipient\": \"David\", \"amount\": 1.5}}"}
+{"prompt": "Please send 1000 SHIB to Frank", "target": "{\"name\": \"transfer_token\", \"arguments\": {\"token\": \"SHIB\", \"recipient\": \"Frank\", \"amount\": 1000}}"}
+{"prompt": "Swap 10 ETH to USDT", "target": "{\"name\": \"swap_token\", \"arguments\": {\"from_token\": \"ETH\", \"to_token\": \"USDT\", \"amount\": 10}}"}
+{"prompt": "Exchange 500 USDC for BNB", "target": "{\"name\": \"swap_token\", \"arguments\": {\"from_token\": \"USDC\", \"to_token\": \"BNB\", \"amount\": 500}}"}
+{"prompt": "Swap 100 DAI to BUSD", "target": "{\"name\": \"swap_token\", \"arguments\": {\"from_token\": \"DAI\", \"to_token\": \"BUSD\", \"amount\": 100}}"}
+{"prompt": "Convert 250 MATIC into USDT", "target": "{\"name\": \"swap_token\", \"arguments\": {\"from_token\": \"MATIC\", \"to_token\": \"USDT\", \"amount\": 250}}"}
+{"prompt": "Please swap 5 BTC for ETH", "target": "{\"name\": \"swap_token\", \"arguments\": {\"from_token\": \"BTC\", \"to_token\": \"ETH\", \"amount\": 5}}"}
+{"prompt": "Exchange 77 AAVE to UNI", "target": "{\"name\": \"swap_token\", \"arguments\": {\"from_token\": \"AAVE\", \"to_token\": \"UNI\", \"amount\": 77}}"}
+{"prompt": "Add liquidity 1000 USDT and 1 ETH", "target": "{\"name\": \"add_liquidity\", \"arguments\": {\"token_a\": \"USDT\", \"amount_a\": 1000, \"token_b\": \"ETH\", \"amount_b\": 1}}"}
+{"prompt": "Provide liquidity with 500 DAI and 0.3  TH", "target": "{\"name\": \"add_liquidity\", \"arguments\": {\"token_a\": \"DAI\", \"amount_a\": 500, \"token_b\": \"WETH\", \"amount_b\": 0.3}}"}
+{"prompt": "Add 100 USDC + 0.1 BNB to the pool", "target": "{\"name\": \"add_liquidity\", \"arguments\": {\"token_a\": \"USDC\", \"amount_a\": 100, \"token_b\": \"BNB\", \"amount_b\": 0.1}}"}
+{"prompt": "Remove liquidity 1 LP_TOKEN", "target": "{\"name\": \"remove_liquidity\", \"arguments\": {\"lp_token\": \"LP_TOKEN\", \"amount\": 1}}"}
+{"prompt": "Withdraw 10 UNI-V2 tokens", "target": "{\"name\": \"remove_liquidity\", \"arguments\": {\"lp_token\": \"UNI-V2\", \"amount\": 10}}"}
+{"prompt": "Remove all SUSHI-LP from pool", "target": "{\"name\": \"remove_liquidity\", \"arguments\": {\"lp_token\": \"SUSHI-LP\", \"amount\": \"all\"}}"}
+{"prompt": "Check balance of USDT", "target": "{\"name\": \"check_balance\", \"arguments\": {\"token\": \"USDT\"}}"}
+{"prompt": "What's my ETH balance?", "target": "{\"name\": \"check_balance\", \"arguments\": {\"token\": \"ETH\"}}"}
+{"prompt": "Show me my DAI amount", "target": "{\"name\": \"check_balance\", \"arguments\": {\"token\": \"DAI\"}}"}
+{"prompt": "Approve USDT for trading", "target": "{\"name\": \"approve_token\", \"arguments\": {\"token\": \"USDT\"}}"}
+{"prompt": "Approve 1inch to spend my USDC", "target": "{\"name\": \"approve_token\", \"arguments\": {\"token\": \"USDC\", \"spender\": \"1inch\"}}"}
+{"prompt": "Let PancakeSwap use my BNB", "target": "{\"name\": \"approve_token\", \"arguments\": {\"token\": \"BNB\", \"spender\": \"PancakeSwap\"}}"}
+{"prompt": "Stake 1000 CAKE", "target": "{\"name\": \"stake_token\", \"arguments\": {\"token\": \"CAKE\", \"amount\": 1000}}"}
+{"prompt": "Put 50 UNI into staking", "target": "{\"name\": \"stake_token\", \"arguments\": {\"token\": \"UNI\", \"amount\": 50}}"}
+{"prompt": "Stake 200 SUSHI", "target": "{\"name\": \"stake_token\", \"arguments\": {\"token\": \"SUSHI\", \"amount\": 200}}"}
+{"prompt": "Unstake 500 SUSHI", "target": "{\"name\": \"unstake_token\", \"arguments\": {\"token\": \"SUSHI\", \"amount\": 500}}"}
+{"prompt": "Withdraw 30 UNI from staking", "target": "{\"name\": \"unstake_token\", \"arguments\": {\"token\": \"UNI\", \"amount\": 30}}"}
+{"prompt": "Remove 100 CAKE from stake", "target": "{\"name\": \"unstake_token\", \"arguments\": {\"token\": \"CAKE\", \"amount\": 100}}"}
+{"prompt": "Get price of ETH", "target": "{\"name\": \"get_price\", \"arguments\": {\"token\": \"ETH\"}}"}
+{"prompt": "Show BTC price", "target": "{\"name\": \"get_price\", \"arguments\": {\"token\": \"BTC\"}}"}
+{"prompt": "What is the current price of USDC?", "target": "{\"name\": \"get_price\", \"arguments\": {\"token\": \"USDC\"}}"}
+{"prompt": "Check gas fee on Ethereum", "target": "{\"name\": \"get_gas_fee\", \"arguments\": {\"chain\": \"Ethereum\"}}"}
+{"prompt": "How much is the gas on BSC?", "target": "{\"name\": \"get_gas_fee\", \"arguments\": {\"chain\": \"BSC\"}}"}
+{"prompt": "Tell me Polygon gas fee", "target": "{\"name\": \"get_gas_fee\", \"arguments\": {\"chain\": \"Polygon\"}}"}
+{"prompt": "Transfer 200 USDT from Ethereum to BSC", "target": "{\"name\": \"multichain_transfer\", \"arguments\": {\"token\": \"USDT\", \"amount\": 200, \"from_chain\": \"Ethereum\", \"to_chain\": \"BSC\"}}"}
+{"prompt": "Move 50 DAI from Polygon to Avalanche", "target": "{\"name\": \"multichain_transfer\", \"arguments\": {\"token\": \"DAI\", \"amount\": 50, \"from_chain\": \"Polygon\", \"to_chain\": \"Avalanche\"}}"}
+{"prompt": "Send 5 ETH from Arbitrum to Optimism", "target": "{\"name\": \"multichain_transfer\", \"arguments\": {\"token\": \"ETH\", \"amount\": 5, \"from_chain\": \"Arbitrum\", \"to_chain\": \"Optimism\"}}"}
+{"prompt": "btc?", "target": "{\"name\": \"get_price\", \"arguments\": {\"token\": \"BTC\"}}"}
+{"prompt": "eth?", "target": "{\"name\": \"get_price\", \"arguments\": {\"token\": \"ETH\"}}"}
+{"prompt": "usdt?", "target": "{\"name\": \"get_price\", \"arguments\": {\"token\": \"USDT\"}}"}
+{"prompt": "usdc", "target": "{\"name\": \"get_price\", \"arguments\": {\"token\": \"USDC\"}}"}
+{"prompt": "bnb", "target": "{\"name\": \"get_price\", \"arguments\": {\"token\": \"BNB\"}}"}
+{"prompt": "gas?", "target": "{\"name\": \"get_gas_fee\", \"arguments\": {\"chain\": \"Ethereum\"}}"}
+{"prompt": "gas bsc?", "target": "{\"name\": \"get_gas_fee\", \"arguments\": {\"chain\": \"BSC\"}}"}
+{"prompt": "eth gas", "target": "{\"name\": \"get_gas_fee\", \"arguments\": {\"chain\": \"Ethereum\"}}"}
+{"prompt": "polygon fee", "target": "{\"name\": \"get_gas_fee\", \"arguments\": {\"chain\": \"Polygon\"}}"}
+{"prompt": "stake uni", "target": "{\"name\": \"stake_token\", \"arguments\": {\"token\": \"UNI\"}}"}
+{"prompt": "unstake cake", "target": "{\"name\": \"unstake_token\", \"arguments\": {\"token\": \"CAKE\"}}"}
+{"prompt": "withdraw sushi", "target": "{\"name\": \"unstake_token\", \"arguments\": {\"token\": \"SUSHI\"}}"}
+{"prompt": "add liq eth usdc", "target": "{\"name\": \"add_liquidity\", \"arguments\": {\"token_a\": \"ETH\", \"token_b\": \"USDC\"}}"}
+{"prompt": "rm liq uni-v2", "target": "{\"name\": \"remove_liquidity\", \"arguments\": {\"lp_token\": \"UNI-V2\"}}"}
+{"prompt": "approve dai", "target": "{\"name\": \"approve_token\", \"arguments\": {\"token\": \"DAI\"}}"}
+{"prompt": "approve usdt for pancakeswap", "target": "{\"name\": \"approve_token\", \"arguments\": {\"token\": \"USDT\", \"spender\": \"PancakeSwap\"}}"}
+{"prompt": "check usdc", "target": "{\"name\": \"check_balance\", \"arguments\": {\"token\": \"USDC\"}}"}
+{"prompt": "balance btc", "target": "{\"name\": \"check_balance\", \"arguments\": {\"token\": \"BTC\"}}"}
+{"prompt": "swap eth usdt", "target": "{\"name\": \"swap_token\", \"arguments\": {\"from_token\": \"ETH\", \"to_token\": \"USDT\"}}"}
+{"prompt": "swap usdc bnb", "target": "{\"name\": \"swap_token\", \"arguments\": {\"from_token\": \"USDC\", \"to_token\": \"BNB\"}}"}
+{"prompt": "200 usdt alice", "target": "{\"name\": \"transfer_token\", \"arguments\": {\"token\": \"USDT\", \"recipient\": \"Alice\", \"amount\": 200}}"}
+{"prompt": "send 10 eth 0xA1b2", "target": "{\"name\": \"transfer_token\", \"arguments\": {\"token\": \"ETH\", \"recipient\": \"0xA1b2\", \"amount\": 10}}"}
+{"prompt": "transfer 7.5 bnb Bob", "target": "{\"name\": \"transfer_token\", \"arguments\": {\"token\": \"BNB\", \"recipient\": \"Bob\", \"amount\": 7.5}}"}
+{"prompt": "to polygon 100 usdt", "target": "{\"name\": \"multichain_transfer\", \"arguments\": {\"token\": \"USDT\", \"amount\": 100, \"to_chain\": \"Polygon\"}}"}
+{"prompt": "move 50 dai polygon avalanche", "target": "{\"name\": \"multichain_transfer\", \"arguments\": {\"token\": \"DAI\", \"amount\": 50, \"from_chain\": \"Polygon\", \"to_chain\": \"Avalanche\"}}"}
+{"prompt": "arbitrum to optimism 3 eth", "target": "{\"name\": \"multichain_transfer\", \"arguments\": {\"token\": \"ETH\", \"amount\": 3, \"from_chain\": \"Arbitrum\", \"to_chain\": \"Optimism\"}}"}
+{"prompt": "uni?", "target": "{\"name\": \"get_price\", \"arguments\": {\"token\": \"UNI\"}}"}
+{"prompt": "sushi bal", "target": "{\"name\": \"check_balance\", \"arguments\": {\"token\": \"SUSHI\"}}"}
+{"prompt": "cake stake", "target": "{\"name\": \"stake_token\", \"arguments\": {\"token\": \"CAKE\"}}"}
+{"prompt": "price aave", "target": "{\"name\": \"get_price\", \"arguments\": {\"token\": \"AAVE\"}}"}
+{"prompt": "liq add busd dai", "target": "{\"name\": \"add_liquidity\", \"arguments\": {\"token_a\": \"BUSD\", \"token_b\": \"DAI\"}}"}

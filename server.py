@@ -46,6 +46,7 @@ def build_prompt(command: str) -> str:
 - `swap_token(from_token: str, to_token: str, amount: int)`
 - `get_token_price(token_name: str)`
 - `get_balance(wallet_address: str, token_name: str)`
+- `deposit_vault(amount: int, token: str)`
 ---
 
 **EXAMPLES:**
@@ -136,6 +137,31 @@ Output:
   }}
 }}
 ```
+
+# Example 9 (Command Mode - Deposit to vault)
+User: "deposit 1 apt to vault"
+Output:
+```json
+{{
+  "name": "deposit_vault",
+  "arguments": {{
+    "amount": 1,
+    "token": "apt"
+  }}
+}}
+```
+
+# Example 10 (Command Mode - Another deposit phrasing)
+User: "put 0.2 apt into vault"
+Output:
+```json
+{{
+  "name": "deposit_vault",
+  "arguments": {{
+    "amount": 0.2,
+    "token": "apt"
+  }}
+}}
 ---
 
 **Current Request:**

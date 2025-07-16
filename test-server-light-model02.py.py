@@ -10,7 +10,7 @@ pipe = pipeline(
     return_full_text=False
 )
 
-command = "chuyen 20k usd cho huy"
+command = ""
 
 def build_prompt(command: str) -> str:
     return f"""You are an AI agent. Given an English user command, output exactly one **complete** JSON object (include all closing braces):

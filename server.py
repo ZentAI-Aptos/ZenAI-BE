@@ -33,7 +33,6 @@ def build_prompt(command: str) -> str:
     """
     Builds an improved prompt for the LLM to clearly distinguish between Command and Chat modes.
     """
-    # Using f-string with triple quotes for better readability
     return f"""Your task is to act as a command parser. You have two distinct modes:
 
 1.  **Command Mode**: If the user's request can be mapped to one of the `ALLOWED FUNCTIONS`, you MUST output a valid JSON object representing that function call and nothing else. If some arguments are missing, set their value to `null`. Do not add any extra text or explanation.
@@ -47,7 +46,12 @@ def build_prompt(command: str) -> str:
 - `get_token_price(token_name: str)`
 - `get_balance(wallet_address: str, token_name: str)`
 - `deposit_vault(amount: int, token: str)`
+- `withdraw_vault(amount: int, token: str)`
 ---
+
+**ACCEPTED TOKENS:**  
+- `APT`, `USDC`, `USDT`, `DAI`, `BNB`, `CAKE`  
+(Use these exact symbols for the `token` or `token_name` arguments in JSON output. Ignore unsupported tokens.)
 
 **EXAMPLES:**
 
@@ -138,19 +142,6 @@ Output:
 }}
 ```
 
-# Example 9 (Command Mode - Deposit to vault)
-User: "deposit 1 apt to vault"
-Output:
-```json
-{{
-  "name": "deposit_vault",
-  "arguments": {{
-    "amount": 1,
-    "token": "apt"
-  }}
-}}
-```
-
 # Example 10 (Command Mode - Another deposit phrasing)
 User: "put 0.2 apt into vault"
 Output:
@@ -162,6 +153,21 @@ Output:
     "token": "apt"
   }}
 }}
+```
+
+# Example 12 (Command Mode - Withdraw from vault)
+User: "withdraw 0.5 btc from vault"
+Output:
+```json
+{{
+  "name": "withdraw_vault",
+  "arguments": {{
+    "amount": 0.5,
+    "token": "btc"
+  }}
+}}
+```
+
 ---
 
 **Current Request:**
